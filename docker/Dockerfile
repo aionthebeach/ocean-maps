@@ -5,3 +5,5 @@ ENV PROJ_LIB $CONDA_DIR/share/proj/
 RUN conda install --debug --yes --file /tmp/requirements.txt && \
     fix-permissions $CONDA_DIR && \
     fix-permissions /home/$NB_USER
+
+RUN jupyter labextension install jupyterlab_vim
