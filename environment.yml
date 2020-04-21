@@ -1,4 +1,4 @@
-name: nc-py37-geopandas
+name: aionthebeach
 channels:
   - conda-forge
 dependencies:
