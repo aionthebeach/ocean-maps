@@ -1,15 +1,12 @@
 # Analysing Fishing vessel data and their relation with the animals such as Sharks
 
 ## Installation
-### System Requirements
-- RAM?
-- 
 ### Installing Conda
-- Follow instructions to install anaconda
+- Follow instructions to install [Anaconda](https://docs.anaconda.com/anaconda/install/) for Python 3.6+
 
 ### Creating Virtual Environment
 - conda env create -f environment.yml
-- conda activate <environmentname>
+- conda activate aionthebeach
 
 ### Running with docker
 We also have a docker image you can run rather than installing dependencies
@@ -37,7 +34,3 @@ AI On The Beach repo on dockerhub.
 `$ docker push aionthebeach/data-science:latest`
 
 If you haven't been added to the AI on the beach docker repo the docker push will fail, contact Zach WF to get access.
-
-## Running the Analysis
-
-## Observations and Results
