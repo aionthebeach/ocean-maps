@@ -2,3 +2,4 @@
 *.part
 .ipynb_checkpoints/*
 dask-worker-space/*
+data/*
