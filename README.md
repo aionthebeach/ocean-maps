@@ -1,12 +1,68 @@
 # Analysing Fishing vessel data and their relation with the animals such as Sharks
 
 ## Installation
+
+**This repo was originally built using Arch Linux and as such has some Linux-specific dependencies, however, we have gotten the project to run on both Linux and Windows using WSL**
+
+More information here on WSL:
+https://docs.microsoft.com/en-us/windows/wsl/about
+
+## Getting started on Windows
+**GPU support coming but not yet available until Windows releases a version supporting it**
+
+1. Follow the Microsoft document listed below. Be sure to upgrade to WSL 2. This requires becoming a Windows Insider, which is a simple sign-up process. You may need to restart a few times, as per instructions.
+
+**Please install Ubuntu as the Linux distro of choice.**
+
+    https://docs.microsoft.com/en-us/windows/wsl/install-win10
+
+2. Once Ubuntu is installed **do not use command prompt or Powershell to run it, hit the Windows key and search for the Ubuntu terminal directly.** 
+
+3. When you're in Ubuntu, download Anaconda by entering the following into the terminal:
+
+        wget  https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh
+
+4. Then install it via the following command:
+
+        bash Anaconda3-2019.03-Linux-x86_64.sh
+
+5. Follow through the prompts on the sceen to install Anaconda
+
+6. Once Anaconda is installed, navigate to the folder on Windows where your repository is within the terminal. **Linux uses a different syntax in which the user must prepend "/mnt/<driveletter> to the drive** Make sure you go into the notebook folder and not the parent folder. Example code below:
+
+        cd /mnt/c/projects/AIoTB/notebook/
+
+6. Run the following command to create the environment:
+
+        conda env create -f environment.yml
+
+7. It will take a while to download the requisite packages. Once it's finished activate the environment with this command:
+
+        conda activate aionthebeach
+
+8. We're ready to run the notebook now, so enter in the below:
+
+        conda activate aionthebeach
+
+**You will receive an error that looks like**
+
+        This command cannot be run due to the error: The system cannot find the file specified.
+
+This is fine, just copy and paste one of the HTTP links below into your browser. Example:
+
+    http://localhost:8888/?token=8883967c381b6a5b72a744dd1633d8a4b9f6abed8a55cfe1
+
+Voila, you now have AIoTB running on your Windows machine!
+
+## Getting started on Linux
 ### Installing Conda
 - Follow instructions to install [Anaconda](https://docs.anaconda.com/anaconda/install/) for Python 3.6+
 
 ### Creating Virtual Environment
 - conda env create -f environment.yml
 - conda activate aionthebeach
+
+
 
 ### Running with docker
 We also have a docker image you can run rather than installing dependencies
