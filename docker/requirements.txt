@@ -28,7 +28,7 @@ GDAL==2.4.1
 geopandas==0.5.1
 idna==2.8
 ipykernel==5.1.1
-ipython==7.6.1
+ipython==7.16.3
 ipywidgets==7.5.0
 itsdangerous==1.1.0
 jedi==0.14.1
