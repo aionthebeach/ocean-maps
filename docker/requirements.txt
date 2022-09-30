@@ -33,7 +33,7 @@ ipywidgets==7.5.0
 itsdangerous==1.1.0
 jedi==0.14.1
 Jinja2==2.11.3
-joblib==0.13.2
+joblib==1.2.0
 jsonschema==3.0.1
 kiwisolver==1.1.0
 MarkupSafe==1.1.1
